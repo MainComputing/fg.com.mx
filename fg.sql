@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Servidor: localhost
--- Tiempo de generación: 10-10-2014 a las 20:27:51
--- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.3.13
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 11-10-2014 a las 01:50:50
+-- Versión del servidor: 5.6.17
+-- Versión de PHP: 5.5.12
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `fgsystem`
+-- Base de datos: `fg`
 --
 
 -- --------------------------------------------------------
@@ -49,6 +49,14 @@ CREATE TABLE IF NOT EXISTS `direccion` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `direccion`
+--
+
+INSERT INTO `direccion` (`id`, `calle`, `num_int`, `num_ext`, `colonia`, `municipio_id`, `estado_id`) VALUES
+(0, 'Rincon ranch', 120, 0, 'Guadalupe', 1, 1),
+(1, 'Tu casa', 1, 2, 'No se ', 1, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -70,6 +78,13 @@ CREATE TABLE IF NOT EXISTS `empleado` (
   `estadoempleado_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `empleado`
+--
+
+INSERT INTO `empleado` (`id`, `rfc`, `nombre`, `apellido_pat`, `apellido_mat`, `edad`, `foto`, `direccion_id`, `puesto_id`, `sucursal_id`, `horario_id`, `estadoempleado_id`) VALUES
+(7890, 'asdfasdfqq123124232', 'Irwin ', 'Flores', 'Garcia', 22, '', 0, 0, 1, 0, 2);
 
 -- --------------------------------------------------------
 
@@ -94,7 +109,14 @@ CREATE TABLE IF NOT EXISTS `estado` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `estado`
+--
+
+INSERT INTO `estado` (`id`, `nombre`) VALUES
+(1, 'Aguascalientes');
 
 -- --------------------------------------------------------
 
@@ -108,7 +130,16 @@ CREATE TABLE IF NOT EXISTS `estadoempleado` (
   `fecha_ingreso` date NOT NULL,
   `fecha_despido` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='estado:1 = Activo | 0 = despedido' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='estado:1 = Activo | 0 = despedido' AUTO_INCREMENT=4 ;
+
+--
+-- Volcado de datos para la tabla `estadoempleado`
+--
+
+INSERT INTO `estadoempleado` (`id`, `estado`, `fecha_ingreso`, `fecha_despido`) VALUES
+(1, 1, '0000-00-00', '0000-00-00'),
+(2, 1, '0000-00-00', '0000-00-00'),
+(3, 1, '0000-00-00', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -124,6 +155,13 @@ CREATE TABLE IF NOT EXISTS `horario` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `horario`
+--
+
+INSERT INTO `horario` (`id`, `tipo`, `entrada_hora`, `salida_hora`) VALUES
+(0, 'M', '07:00:00', '02:00:00');
+
 -- --------------------------------------------------------
 
 --
@@ -135,7 +173,14 @@ CREATE TABLE IF NOT EXISTS `municipio` (
   `nombre` varchar(50) NOT NULL,
   `id_estado` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `municipio`
+--
+
+INSERT INTO `municipio` (`id`, `nombre`, `id_estado`) VALUES
+(1, 'Aguascalientes', 0);
 
 -- --------------------------------------------------------
 
@@ -148,6 +193,14 @@ CREATE TABLE IF NOT EXISTS `puesto` (
   `nombre` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `puesto`
+--
+
+INSERT INTO `puesto` (`id`, `nombre`) VALUES
+(0, 'Gerente'),
+(1, 'Gerente');
 
 -- --------------------------------------------------------
 
@@ -162,6 +215,13 @@ CREATE TABLE IF NOT EXISTS `sucursal` (
   `direccion_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `sucursal`
+--
+
+INSERT INTO `sucursal` (`id`, `nombre_suc`, `num_emp`, `direccion_id`) VALUES
+(1, 'Villas de Nuestra Señora', 50, 1);
 
 -- --------------------------------------------------------
 
