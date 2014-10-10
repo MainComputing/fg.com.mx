@@ -3,14 +3,14 @@
 * Controlador para el Login
 */
 
-require_once '../model/LoginModel.php';
+include('../model/ModelLogin.php');
 
 $id   = $_POST["idEmpleado"];
 $pass = $_POST["password"];
 
-$model_login = new LoginModel();
+$model_login = new ModelLogin();
 
-$nombre = $model_login -> verificarLogin($id,$pass);
+$nombre = $model_login->verificar_login($id, $pass);
 if($nombre != null && $nombre != "")
 {
 	session_start();

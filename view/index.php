@@ -2,7 +2,8 @@
     session_start();
    if(!isset($_SESSION['nombre_usuario']))
    {
-     window.location.href = "/fg.com.mx/login.html";
+     //window.location.href = "/fg.com.mx/login.html";
+     header('Location: /fg.com.mx/login.html');
    }
 ?>
 
