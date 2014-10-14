@@ -199,7 +199,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Número de Empleado:</label>
-                                        <input class="form-control"  name="num_empleado" placeholder="Ej. 00001"/>
+                                        <input class="form-control"  name="num_empleado" id="num_empleado" placeholder="Ej. 00001"/>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +207,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>RFC:</label>
-                                        <input class="form-control" name="rfc" placeholder="Ej. CUPU800825569"/>
+                                        <input class="form-control" name="rfc" id="rfc" placeholder="Ej. CUPU800825569"/>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +215,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Nombre(s):</label>
-                                        <input class="form-control" name="nombre" placeholder="Ej. Ulises"/>
+                                        <input class="form-control" name="nombre"if="nombre" placeholder="Ej. Ulises"/>
                                     </div>
                                 </div>
                             </div>
@@ -223,7 +223,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Apellido Paterno:</label>
-                                        <input class="form-control" name="ap_pat" placeholder="Ej. Cuevas"/>
+                                        <input class="form-control" name="ap_pat" id="ap_pat" placeholder="Ej. Cuevas"/>
                                     </div>
                                 </div>
                             </div>
@@ -231,7 +231,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Apellido Materno:</label>
-                                        <input class="form-control" name="ap_mat" placeholder="Ej. Pérez"/>
+                                        <input class="form-control" name="ap_mat" id="ap_mat" placeholder="Ej. Pérez"/>
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Edad:</label>
-                                        <input class="form-control" name="edad" placeholder="Ej. 25"/>
+                                        <input class="form-control" name="edad" id="edad" placeholder="Ej. 25"/>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Dirección:</label>
-                                        <input class="form-control" name="calle" placeholder="Calle: (Ej. Díaz Suárez)"/>
+                                        <input class="form-control" name="calle" id="calle" placeholder="Calle: (Ej. Díaz Suárez)"/>
                                     </div>
                                 </div>
                             </div>
@@ -255,11 +255,11 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="row">
                                         <div class="col-lg-5 col-md-5">
-                                            <input class="form-control" name="num_int" placeholder="Núm. Int. (10)"/>
+                                            <input class="form-control" name="num_int" id="num_int" placeholder="Núm. Int. (10)"/>
                                         </div>
                                         <div class="col-lg-2 col-md-2"></div>
                                         <div class="col-lg-5 col-md-5">
-                                            <input class="form-control" name="num_ext" placeholder="Núm. Ext. (120)"/>
+                                            <input class="form-control" name="num_ext" id="num_ext" placeholder="Núm. Ext. (120)"/>
                                         </div>
                                     </div>
                                 </div>
@@ -268,7 +268,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="col" placeholder="Colonia: (San Cosme)"/>
+                                        <input class="form-control" name="col" id="col"placeholder="Colonia: (San Cosme)"/>
                                     </div>
                                 </div>
                             </div>
@@ -279,7 +279,7 @@
 
                                             <div class="form-group">
                                                 <label>Municipio: </label>
-                                                <select class="form-control" name="municipio">
+                                                <select class="form-control" name="municipio" id="municipio">
                                                     <option>Aguascalientes</option>
                                                 </select>
                                             </div>
@@ -290,7 +290,7 @@
                                         <div class="col-lg-5 col-md-5">
                                             <div class="form-group">
                                                 <label>Estado: </label>
-                                                <select class="form-control" name="Estado">
+                                                <select class="form-control" name="estado" id="estado">
                                                     <option>Aguascalientes</option>
                                                 </select>
                                             </div>
@@ -309,7 +309,7 @@
                                 <img src="../resources/img/previewimage.jpg" style="width: inherit;"/>
                                 <div class="form-group">
                                     <label>Seleccionar Imagen:</label>
-                                    <input type="file">
+                                    <input type="file" id="file">
                                 </div>
                             </div>
                             <div class="row">
@@ -326,7 +326,7 @@
 
                                     <div class="form-group">
                                         <label>Puesto: </label>
-                                        <select class="form-control" name="puesto">
+                                        <select class="form-control" name="puesto" id="puesto">
                                             <option>Gerente</option>
                                         </select>
                                     </div>
@@ -337,7 +337,7 @@
 
                                     <div class="form-group">
                                         <label>Sucursal: </label>
-                                        <select class="form-control" name="sucursal">
+                                        <select class="form-control" name="sucursal" id="sucursal">
                                             <option>Villas de Nuestra Señora</option>
                                         </select>
                                     </div>
@@ -348,7 +348,7 @@
 
                                     <div class="form-group">
                                         <label>Horario: </label>
-                                        <select class="form-control" name="horario">
+                                        <select class="form-control" name="horario" id="horario">
                                             <option>M</option>
                                         </select>
                                     </div>
