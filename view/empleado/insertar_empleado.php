@@ -215,7 +215,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Nombre(s):</label>
-                                        <input class="form-control" name="nombre"if="nombre" placeholder="Ej. Ulises"/>
+                                        <input class="form-control" name="nombre" id="nombre" placeholder="Ej. Ulises"/>
                                     </div>
                                 </div>
                             </div>
@@ -381,10 +381,44 @@
 <script type="text/javascript">
             $("#b_submit").click(function()
                     {
-                       alert("ya entre");
+                        if($("#num_empleado").val().length<1)
+                        {   alert("Ingresa el ID de Empleado.");}
+                        else
+                        { if($("#rfc").val().length<1)
+                          {   alert("Ingresa el RFC.");}
+                          else
+                          { if($("#nombre").val().length<1)
+                            {   alert("Ingresa el Nombre.");}
+                            else
+                            { if($("#ap_pat").val().length<1)
+                              {   alert("Ingresa el Apellido Paterno.");}
+                              else
+                              { if($("#ap_mat").val().length<1)
+                                {   alert("Ingresa el Apellido Materno.");}
+                                else
+                                { if($("#edad").val().length<1)
+                                  {   alert("Ingresa la Edad.");}
+                                  else
+                                   { if($("#calle").val().length<1)
+                                     {   alert("Ingresa la Calle");}
+                                     else
+                                      { if($("#num_ext").val().length<1)
+                                        {   alert("Ingresa el Número Exterior.");}
+                                        else
+                                        {   if($("#col").val().length<1)
+                                            {   alert("Ingresa la Colonia.");}
+                                            
+                                        }
+                                      }
+                                   }
+                                }
+                            }
+                          }
+                        }
                     }
-            );
+                });
     </script>
+     
 
 </body>
 
