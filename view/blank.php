@@ -100,13 +100,13 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="/fg.com.mx/view/"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
                         </li>
                          <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Administrar Empleados<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="empleado/insertar_empleado.php">Agregar nuevo usuario</a>
+                                    <a href="fg.com.mx/view/empleado/insertar_empleado.php">Agregar nuevo usuario</a>
                                 </li>
                                 <li>
                                     <a href="#">Buscar usuario</a>
