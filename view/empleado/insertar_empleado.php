@@ -177,7 +177,7 @@
                     </div>
                     <div class="row" style="text-align: right">
                         <div class="col-lg-12" >
-                            <button type="submit" class="btn btn-info">Guardar</button>
+                            <button type="submit" name="submit" class="btn btn-info">Guardar</button>
                             <button type="button" class="btn btn-danger">Cancelar</button>
                         </div>
                     </div>
