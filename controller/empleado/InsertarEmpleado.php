@@ -1,5 +1,5 @@
 <?php
-include('../model/ModelEmpleado.php');
+include('../../model/ModelEmpleado.php');
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -22,5 +22,5 @@ $mode_empleado ->insertar_empleado(
         $_POST['puesto'], 
         $_POST['sucursal'], 
         $_POST['horario']);
-echo "Ya lo inserto";
+//echo "Ya lo inserto";
 ?>

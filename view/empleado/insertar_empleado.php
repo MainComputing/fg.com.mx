@@ -279,7 +279,7 @@
 
                                             <div class="form-group">
                                                 <label>Municipio: </label>
-                                                <select class="form-control" name="Municipio:">
+                                                <select class="form-control" name="municipio">
                                                     <option>Aguascalientes</option>
                                                 </select>
                                             </div>
