@@ -168,7 +168,7 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-       <form method="POST" action="../../controller/empleado/InsertarEmpleado.php">
+       <form method="POST" >
                 <div id="page-wrapper">
                     <div class="row">
                         <div class="col-lg-12">
@@ -177,7 +177,7 @@
                     </div>
                     <div class="row" style="text-align: right">
                         <div class="col-lg-12" >
-                            <button type="submit" name="submit" class="btn btn-info">Guardar</button>
+                            <button type="button" name="submit" id="b_submit"class="btn btn-info">Guardar</button>
                             <button type="button" class="btn btn-danger">Cancelar</button>
                         </div>
                     </div>
@@ -378,6 +378,13 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../js/sb-admin-2.js"></script>
+<script type="text/javascript">
+            $("#b_submit").click(function()
+                    {
+                       alert("ya entre");
+                    }
+            );
+    </script>
 
 </body>
 
