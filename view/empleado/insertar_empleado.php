@@ -381,40 +381,91 @@
 <script type="text/javascript">
             $("#b_submit").click(function()
                     {
-                        if($("#num_empleado").val().length<1)
-                        {   alert("Ingresa el ID de Empleado.");}
+                       if($("#num_empleado").val().length<1)
+                        {   alert("Ingresa un el de Empleado");}
                         else
-                        { if($("#rfc").val().length<1)
+                        {
+                            if(isNaN($("#num_empleado").val()))
+                            {
+                                alert("El numero del empleado no es valido.");
+                            }
+                            else
+                            {
+                            if($("#rfc").val().length<1)
                           {   alert("Ingresa el RFC.");}
                           else
                           { if($("#nombre").val().length<1)
                             {   alert("Ingresa el Nombre.");}
                             else
-                            { if($("#ap_pat").val().length<1)
+                            { 
+                                if(!$("#nombre").val().match(/^[a-zA-Z]+\s+[a-zA-Z]+/))
+                                {
+                                    alert("El nombre del Empleado es Invalido");
+                                }
+                                else
+                                {
+                                if($("#ap_pat").val().length<1)
                               {   alert("Ingresa el Apellido Paterno.");}
                               else
-                              { if($("#ap_mat").val().length<1)
+                              {
+                                if(!$("#ap_pat").val().match(/^[a-zA-Z]+$/))
+                                {
+                                    alert("El apellido paterno del Empleado es Invalido");
+                                }
+                                else
+                                {  
+                                  if($("#ap_mat").val().length<1)
                                 {   alert("Ingresa el Apellido Materno.");}
                                 else
-                                { if($("#edad").val().length<1)
+                                { 
+                                    if(!$("#ap_mat").val().match(/^[a-zA-Z]+$/))
+                                {
+                                    alert("El apellido materno del Empleado es Invalido");
+                                }
+                                else
+                                {
+                                    if($("#edad").val().length<1)
                                   {   alert("Ingresa la Edad.");}
                                   else
-                                   { if($("#calle").val().length<1)
+                                   { 
+                                       if(isNaN($("#edad").val()))
+                                       {
+                                           alert("La edad no es valida");
+                                       }
+                                       else
+                                       {
+                                       if($("#calle").val().length<1)
                                      {   alert("Ingresa la Calle");}
                                      else
                                       { if($("#num_ext").val().length<1)
                                         {   alert("Ingresa el Número Exterior.");}
                                         else
-                                        {   if($("#col").val().length<1)
+                                        {   
+                                           if(isNaN($("#num_ext").val()))
+                                           {
+                                               alert("El numero exterior no es valido.");
+                                           }
+                                           else
+                                           {
+                                            if($("#col").val().length<1)
                                             {   alert("Ingresa la Colonia.");}
-                                            
+                                            else
+                                            {
+                                                alert("Todo esta bien");
+                                            }
+                                            }
                                         }
                                       }
+                                    }
                                    }
+                               }
                                 }
                             }
+                            }
+                        }
                           }
                         }
+                    }
                     }
                 });
     </script>
