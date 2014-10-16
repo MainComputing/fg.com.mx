@@ -3127,6 +3127,7 @@
 	 */
 	function _fnFeatureHtmlPaginate ( settings )
 	{
+            
 		var
 			type   = settings.sPaginationType,
 			plugin = DataTable.ext.pager[ type ],
@@ -3172,7 +3173,8 @@
 				"sName": "pagination"
 			} );
 		}
-	
+                /*Eliminamos el sorting de las acciones*/
+        $('#th_action').removeClass("sorting");
 		return node;
 	}
 	
@@ -3188,6 +3190,7 @@
 	 */
 	function _fnPageChange ( settings, action, redraw )
 	{
+            
 		var
 			start     = settings._iDisplayStart,
 			len       = settings._iDisplayLength,
@@ -3245,7 +3248,8 @@
 		if ( redraw ) {
 			_fnDraw( settings );
 		}
-	
+                /*Eliminamos el sorting de las acciones*/
+        $('#th_action').removeClass("sorting");
 		return changed;
 	}
 	
@@ -3265,6 +3269,8 @@
 			} )
 			.html( settings.oLanguage.sProcessing )
 			.insertBefore( settings.nTable )[0];
+                /*Eliminamos el sorting de las acciones*/
+        $('#th_action').removeClass("sorting");
 	}
 	
 	
@@ -3281,6 +3287,8 @@
 		}
 	
 		_fnCallbackFire( settings, null, 'processing', [settings, show] );
+                /*Eliminamos el sorting de las acciones*/
+        $('#th_action').removeClass("sorting");
 	}
 	
 	/**
@@ -3417,6 +3425,8 @@
 			"fn": _fnScrollDraw,
 			"sName": "scrolling"
 		} );
+                /*Eliminamos el sorting de las acciones*/
+        $('#th_action').removeClass("sorting");
 	
 		return scroller[0];
 	}
