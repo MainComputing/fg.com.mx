@@ -84,7 +84,7 @@
             </ul>
             <!-- /.navbar-top-links -->
 
-            <div class="navbar-default sidebar" role="navigation" style="margin-top: 76px;">
+           <div class="navbar-default sidebar" role="navigation" style="margin-top: 76px;">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
@@ -158,7 +158,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Número de Empleado:</label>
-                                        <input class="form-control"  name="num_empleado" id="num_empleado" placeholder="Ej. 00001"/>
+                                        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled="" value="98654">
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>RFC:</label>
-                                        <input class="form-control" name="rfc" id="rfc" placeholder="Ej. CUPU800825569"/>
+                                        <input class="form-control" name="rfc" id="rfc" placeholder="Ej. CUPU800825569" value="JPMR800825569"/>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +174,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Nombre(s):</label>
-                                        <input class="form-control" name="nombre" id="nombre" placeholder="Ej. Ulises"/>
+                                        <input class="form-control" name="nombre" id="nombre" placeholder="Ej. Ulises" value="Juan"/>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Apellido Paterno:</label>
-                                        <input class="form-control" name="ap_pat" id="ap_pat" placeholder="Ej. Cuevas"/>
+                                        <input class="form-control" name="ap_pat" id="ap_pat" placeholder="Ej. Cuevas" value="Pérez"/>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Apellido Materno:</label>
-                                        <input class="form-control" name="ap_mat" id="ap_mat" placeholder="Ej. Pérez"/>
+                                        <input class="form-control" name="ap_mat" id="ap_mat" placeholder="Ej. Pérez" value="Hernández"/>
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +198,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Edad:</label>
-                                        <input class="form-control" name="edad" id="edad" placeholder="Ej. 25"/>
+                                        <input class="form-control" name="edad" id="edad" placeholder="Ej. 25" value="32"/>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Dirección:</label>
-                                        <input class="form-control" name="calle" id="calle" placeholder="Calle: (Ej. Díaz Suárez)"/>
+                                        <input class="form-control" name="calle" id="calle" placeholder="Calle: (Ej. Díaz Suárez)" value="Álvaro Obregón"/>
                                     </div>
                                 </div>
                             </div>
@@ -214,11 +214,11 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="row">
                                         <div class="col-lg-5 col-md-5">
-                                            <input class="form-control" name="num_int" id="num_int" placeholder="Núm. Int. (10)"/>
+                                            <input class="form-control" name="num_int" id="num_int" placeholder="Núm. Int. (10)" value="1"/>
                                         </div>
                                         <div class="col-lg-2 col-md-2"></div>
                                         <div class="col-lg-5 col-md-5">
-                                            <input class="form-control" name="num_ext" id="num_ext" placeholder="Núm. Ext. (120)"/>
+                                            <input class="form-control" name="num_ext" id="num_ext" placeholder="Núm. Ext. (120)" value="235"/>
                                         </div>
                                     </div>
                                 </div>
@@ -227,7 +227,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="col" id="col"placeholder="Colonia: (San Cosme)"/>
+                                        <input class="form-control" name="col" id="col"placeholder="Colonia: (San Cosme)" value="Centro"/>
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@
                         <div class="col-lg-5 col-md-5">
                             <div class="col-lg-12 col-md-12">
                                 <!-- Aqui va la foto-->
-                                <img src="../resources/img/previewimage.jpg" style="width: inherit;"/>
+                                <img src="../resources/img/juan_perez.jpg" style="width: inherit;"/>
                                 <div class="form-group">
                                     <label>Seleccionar Imagen:</label>
                                     <input type="file" id="file">

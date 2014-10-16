@@ -88,7 +88,7 @@
             </ul>
             <!-- /.navbar-top-links -->
 
-            <div class="navbar-default sidebar" role="navigation" style="margin-top: 76px;">
+           <div class="navbar-default sidebar" role="navigation" style="margin-top: 76px;">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
@@ -106,63 +106,22 @@
                             <a href="/fg.com.mx/view/"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
                         </li>
                          <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Administrar Empleados<span class="fa arrow"></span></a>
+                            <a href="/fg.com.mx/view/empleado/admin_empleado.php"><i class="fa fa-sitemap fa-fw"></i> Administrar Empleados</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Administrar Sucursales</a>
                             <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="empleado/insertar_empleado.php">Agregar nuevo usuario</a>
-                                </li>
-                                <li>
-                                    <a href="#">Buscar usuario</a>
-                                </li>
-                                <li>
-                                    <a href="#">Modificar usuario</a>
-                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Administrar Sucursales<span class="fa arrow"></span></a>
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Administrar Cursos</a>
                             <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Agregar nueva sucursal</a>
-                                </li>
-                                <li>
-                                    <a href="#">Buscar sucursal</a>
-                                </li>
-                                <li>
-                                    <a href="#">Modificar sucursal</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Administrar Cursos<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Agregar nuevo curso</a>
-                                </li>
-                                <li>
-                                    <a href="#">Buscar curso</a>
-                                </li>
-                                <li>
-                                    <a href="#">Modificar curso</a>
-                                </li>
-                                <li>
-                                    <a href="#">Asignar curso</a>
-                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>           
                         <li class="active">
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Generar Reporte<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                               <li>
-                                    <a href="#">Generar Reporte</a>
-                               </li> 
-                               <li>
-                                    <a href="#">Imprimir Reporte</a>
-                               </li>
-                            </ul>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Generar Reporte</a>
                             <!-- /.nav-second-level -->
                         </li>
                     </ul>
