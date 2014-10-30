@@ -144,8 +144,20 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Relaci&oacute;n de empleados
-                               <button type="button" class="btn btn-success" id="button_agregar"style="margin-left: 735px;">Agregar Nuevo</button>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    Relaci&oacute;n de empleados
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <button type="button" class="btn btn-outline btn-info" id='button_info'>Info</button>
+                                    <button type="button" class="btn btn-outline btn-warning" id='button_editar'>Editar</button>
+                                    <button type="button" class="btn btn-outline btn-danger" id='button_despedir'>Despedir</button>
+                                    <button type="button" class="btn btn-outline btn-success" id="button_agregar" >Asignar Curso</button>
+                                </div>
+                                <div class="col-lg-2 col-md-2">
+                                    <button type="button" class="btn btn-success">Agregar Empleado</button>
+                                </div>
+                            </div>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -153,47 +165,22 @@
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
+                                            <th></th>
                                             <th>Nombre(s)</th>
                                             <th>Apellido Paterno</th>
                                             <th>Apellido Materno</th>
                                             <th>Sucursal</th>
-                                            <th id="th_action">Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="odd gradeX">
+                                            <td><input type="checkbox"></td>
                                             <td>Juan</td>
                                             <td>Pérez</td>
                                             <td>Hernández</td>
                                             <td class="center">Madero</td>
-                                            <td class="center">
-                                            <button type="button" class="btn btn-outline btn-info" id='button_info'>Info</button>
-                                            <button type="button" class="btn btn-outline btn-warning" id='button_editar'>Editar</button>
-                                            <button type="button" class="btn btn-outline btn-danger" id='button_despedir'>Despedir</button>
-                                            </td>
                                         </tr>
-<tr class='gradeA'><td>Karina</td><td>Duron</td><td>Maldonado</td><td class='center'>Ags. Juarez</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Antonio</td><td>Reyes</td><td>Reyes</td><td class='center'>Ags. Madero</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Bertha</td><td>Betancourt</td><td>Cano</td><td class='center'>Ags. Plaza San Marcos</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Armando</td><td>Castorena</td><td>Carmona</td><td class='center'>Rincon de Romos</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>J. Margarito</td><td>Lechuga</td><td>Rosales</td><td class='center'>Pabellon de Arteaga</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Jose Rodrigo</td><td>Moreno</td><td>Ruiz</td><td class='center'>Ags. Universidad</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Sara</td><td>Martinez</td><td>Ruelas</td><td class='center'>Jesus Maria Centro</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Maria Teresa</td><td>Gomez</td><td>Hernandez</td><td class='center'>Ags. El Campestre</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Maria Angelica</td><td>Ortiz</td><td>Lopez</td><td class='center'>P. de Arteaga 5 de Mayo</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Irma</td><td>Gallegos</td><td>Hernandez</td><td class='center'>J. Maria Paso de Argenta</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Hector Daniel</td><td>Figueroa</td><td>Martinez</td><td class='center'>J. Maria Miguel de Madrid</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Silvana Guadalupe</td><td>Loera</td><td>Santillan</td><td class='center'>Ags. Pulgas Pandas</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Elisa</td><td>Saldivar</td><td>Vargas</td><td class='center'>Ags. Av. de los Maestros</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Hector Fabian</td><td>Delgado</td><td>Serrano</td><td class='center'>Ags. Juarez</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Leobardo</td><td>Chavez</td><td>de Luna</td><td class='center'>Ags. Madero</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Maria Yessica</td><td>Plascencia</td><td>Jimenez</td><td class='center'>Ags. Plaza San Marcos</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Marisol</td><td>Serrano</td><td>Flores</td><td class='center'>Rincon de Romos</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Rosa</td><td>Perez</td><td>Gonzalez</td><td class='center'>Pabellon de Arteaga</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Sandra Judith</td><td>Torres</td><td>Jaime</td><td class='center'>Ags. Universidad</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Laura Carolina</td><td>Estrada</td><td>Frausto</td><td class='center'>Jesus Maria Centro</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Erika Cecilia</td><td>Diaz</td><td>Cortez</td><td class='center'>Ags. El Campestre</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
-<tr class='gradeA'><td>Jaime</td><td>Aguilar</td><td>Francisco</td><td class='center'>P. de Arteaga 5 de Mayo</td><td class='center'><button type='button' class='btn btn-outline btn-info'>Info</button>&nbsp;<button type='button' class='btn btn-outline btn-warning' id='button_editar'>Editar</button>&nbsp;<button type='button' class='btn btn-outline btn-danger'>Despedir</button></td></tr>
+
                                     </tbody>
                                 </table>
                             </div>
